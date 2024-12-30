@@ -1,4 +1,5 @@
 import project1 from "../assets/projects/Project1.png";
+import project2 from "../assets/projects/Project2.png";
 
 
 export const HERO_CONTENT = `I am a passionate and driven full stack developer with a strong focus on crafting scalable and responsive web applications. With hands-on experience in both front-end and back-end technologies such as React.js, Node.js, Express.js, MySQL, and MongoDB, I strive to build user-centric solutions that deliver excellent performance and user experiences. My goal is to leverage my skills to create innovative web applications that meet business needs and exceed user expectations.`;
@@ -17,11 +18,20 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Freelance Full Stack Developer",
+    title: "Adinath trust",
     image: project1,
     description:
       "Developed a website for Aadinnath Trust, showcasing services, donation options, and available facilities in Surat. The site features a user-friendly interface and responsive design.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    link:"https://adinath-landing-page.vercel.app/"
+  },
+  {
+    title: "Echo-Tales",
+    image: project2,
+    description:
+      "Developed a website for Aadinnath Trust, showcasing services, donation options, and available facilities in Surat. The site features a user-friendly interface and responsive design.",
+    technologies: ["React", "CSS", "Tailwind"],
+    link:"https://echo-tales.vercel.app/"
   },
 
 ];

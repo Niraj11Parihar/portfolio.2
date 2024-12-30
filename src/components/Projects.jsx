@@ -1,6 +1,7 @@
 import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   return (
@@ -22,11 +23,16 @@ export const Projects = () => {
             className="mb-18 flex flex-wrap items-center lg:justify-center p-3"
           >
             <div className="w-full lg:w-1/2">
-              <motion.img
-                src={pr.image}
-                alt={pr.title}
-                className="h-3/4 w-3/4 object-cover mb-4"
-              />
+              <a
+                href={pr.link}
+                target="_blank"
+              >
+                <motion.img
+                  src={pr.image}
+                  alt={pr.title}
+                  className="h-3/4 w-3/4 object-cover mb-4"
+                />
+              </a>
             </div>
 
             <div className="w-full max-w-xl lg:w-3/4">
