@@ -24,6 +24,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Parth Clinic",
+    image: project3,
+    description:
+      "Developed the Parth Clinic website during my time at Solvify Tech. Worked extensively on the user interface and frontend of the admin panel, ensuring a responsive and intuitive design. Additionally, developed APIs for the admin panel to enable efficient data management and seamless communication between frontend and backend systems.",
+    technologies: ["React", "Bootstrap", "Node.js", "MySQL", "TypeScript"],
+    link:"https://parthclinic.com/"
+  },
+  {
     title: "Adinath trust",
     image: project1,
     description:
@@ -38,14 +46,6 @@ export const PROJECTS = [
       "Developed a website for Aadinnath Trust, showcasing services, donation options, and available facilities in Surat. The site features a user-friendly interface and responsive design.",
     technologies: ["React", "CSS", "Tailwind"],
     link:"https://echo-tales.vercel.app/"
-  },
-  {
-    title: "Parth Clinic",
-    image: project3,
-    description:
-      "Developed the Parth Clinic website during my time at Solvify Tech. Worked extensively on the user interface and frontend of the admin panel, ensuring a responsive and intuitive design. Additionally, developed APIs for the admin panel to enable efficient data management and seamless communication between frontend and backend systems.",
-    technologies: ["React", "Bootstrap", "Node.js", "MySQL", "TypeScript"],
-    link:"https://parthclinic.com/"
   },
 
 ];
