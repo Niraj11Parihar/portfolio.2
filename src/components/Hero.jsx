@@ -17,15 +17,15 @@ export const Hero = () => {
   return (
     <>
       <div className="border-b border-neutral-800 pb-4 lg:mb-35">
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center items-center min-h-screen">
           {/* Content part */}
-          <div className="w-full lg:w-1/2">
-            <div className="flex flex-col items-center lg:items-start">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end p-4">
+            <div className="flex flex-col items-center lg:items-start max-w-xl">
               <motion.h1
                 variants={container(0)}
                 initial="hidden"
                 animate="visible"
-                className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+                className="pb-8 text-6xl font-thin tracking-tight lg:text-8xl"
               >
                 Niraj Parihar
               </motion.h1>
@@ -41,24 +41,23 @@ export const Hero = () => {
                 variants={container(1)}
                 initial="hidden"
                 animate="visible"
-                className="my-2 max-w-xl md:text-2xl font-light p-3"
+                className="mt-4 text-center lg:text-left text-lg md:text-2xl font-light p-3"
               >
                 {HERO_CONTENT}
               </motion.p>
             </div>
           </div>
+
           {/* Profile image part */}
-          <div className="w-full lg:w-1/2 lg:p-8">
-            <div className="flex h-5/6 justify-center p-3">
-              <motion.img
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, delay: 1 }}
-                className="rounded"
-                src={profileimg}
-                alt="Niraj"
-              />
-            </div>
+          <div className="w-full lg:w-1/2 flex justify-center p-4">
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1.5, delay: 1 }}
+              className="rounded-xl max-h-[500px] w-auto"
+              src={profileimg}
+              alt="Niraj"
+            />
           </div>
         </div>
       </div>
