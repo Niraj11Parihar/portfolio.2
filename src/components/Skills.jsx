@@ -2,7 +2,7 @@ import React from "react";
 import { DiCss3 } from "react-icons/di";
 import { FaBootstrap, FaHtml5, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsLine, RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -45,6 +45,7 @@ export const Skills = () => {
     { icon: SiExpress, label: "Express", color: "text-white", duration: 2 },
     { icon: RiReactjsLine, label: "React", color: "text-cyan-400", duration: 3 },
     { icon: FaNodeJs, label: "Node.js", color: "text-green-600", duration: 4 },
+    { icon: RiNextjsLine, label: "Next.js", color: "text-black-400", duration: 4 },
   ];
 
   return (
