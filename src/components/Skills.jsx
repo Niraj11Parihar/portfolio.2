@@ -5,6 +5,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
+import { TbBrandReactNative } from "react-icons/tb";
 
 const iconVariants = (d) => ({
   initial: { y: -10 },
@@ -20,7 +21,32 @@ const iconVariants = (d) => ({
   },
 });
 
+const SkillIcon = ({ icon: Icon, label, color, duration }) => (
+  <motion.div
+    variants={iconVariants(duration)}
+    initial="initial"
+    animate="animate"
+    className="rounded-2xl flex flex-col justify-center items-center border-4 border-neutral-800 p-6 sm:p-8 gap-3"
+  >
+    <Icon className={`text-5xl sm:text-6xl lg:text-7xl ${color}`} />
+    <p className="text-xs sm:text-sm text-neutral-400 font-medium text-center">{label}</p>
+  </motion.div>
+);
+
 export const Skills = () => {
+  const skills = [
+    { icon: FaHtml5, label: "HTML", color: "text-[#DD4B25]", duration: 2.5 },
+    { icon: DiCss3, label: "CSS", color: "text-[#1A6FB4]", duration: 2 },
+    { icon: FaBootstrap, label: "Bootstrap", color: "text-[#7910F2]", duration: 3.5 },
+    { icon: RiTailwindCssFill, label: "Tailwind", color: "text-[#07B0CE]", duration: 4 },
+    { icon: TbBrandReactNative, label: "React Native", color: "text-cyan-400", duration: 2.5 },
+    { icon: IoLogoJavascript, label: "JavaScript", color: "bg-[#E8D44D] text-black rounded", duration: 2.5 },
+    { icon: SiMongodb, label: "MongoDB", color: "text-green-500", duration: 1 },
+    { icon: SiExpress, label: "Express", color: "text-white", duration: 2 },
+    { icon: RiReactjsLine, label: "React", color: "text-cyan-400", duration: 3 },
+    { icon: FaNodeJs, label: "Node.js", color: "text-green-600", duration: 4 },
+  ];
+
   return (
     <div className="border-b border-neutral-800 pb-16 px-6 md:px-12 lg:px-24">
       <motion.h1
@@ -35,97 +61,17 @@ export const Skills = () => {
         initial={{ x: -200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="flex flex-wrap items-center justify-center gap-x-6 gap-y-8 sm:gap-x-8 lg:gap-x-12"
+        className="flex flex-wrap items-start justify-center gap-x-6 gap-y-12 sm:gap-x-8 lg:gap-x-12"
       >
-        {/* HTML Icon */}
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <FaHtml5 className="text-5xl sm:text-6xl lg:text-7xl text-[#DD4B25]" />
-        </motion.div>
-
-        {/* CSS Icon */}
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <DiCss3 className="text-5xl sm:text-6xl lg:text-7xl text-[#1A6FB4]" />
-        </motion.div>
-
-        {/* Bootstrap Icon */}
-        <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <FaBootstrap className="text-5xl sm:text-6xl lg:text-7xl text-[#7910F2]" />
-        </motion.div>
-
-        {/* Tailwind CSS Icon */}
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <RiTailwindCssFill className="text-5xl sm:text-6xl lg:text-7xl text-[#07B0CE]" />
-        </motion.div>
-
-        {/* JavaScript Icon */}
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <IoLogoJavascript className="text-5xl sm:text-6xl lg:text-7xl bg-[#E8D44D] text-black rounded" />
-        </motion.div>
-
-        {/* MongoDB Icon */}
-        <motion.div
-          variants={iconVariants(1)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <SiMongodb className="text-5xl sm:text-6xl lg:text-7xl text-green-500" />
-        </motion.div>
-
-        {/* Express Icon */}
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <SiExpress className="text-5xl sm:text-6xl lg:text-7xl text-white" />
-        </motion.div>
-
-        {/* ReactJS Icon */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <RiReactjsLine className="text-5xl sm:text-6xl lg:text-7xl text-cyan-400" />
-        </motion.div>
-
-        {/* NodeJS Icon */}
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl flex justify-center items-center border-4 border-neutral-800 p-6 sm:p-8"
-        >
-          <FaNodeJs className="text-5xl sm:text-6xl lg:text-7xl text-green-600" />
-        </motion.div>
+        {skills.map((skill, index) => (
+          <SkillIcon
+            key={index}
+            icon={skill.icon}
+            label={skill.label}
+            color={skill.color}
+            duration={skill.duration}
+          />
+        ))}
       </motion.div>
     </div>
   );

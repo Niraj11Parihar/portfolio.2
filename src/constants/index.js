@@ -2,10 +2,9 @@ import project1 from "../assets/projects/Project1.png";
 import project2 from "../assets/projects/Project2.png";
 import project3 from "../assets/projects/Project3.png";
 
+export const HERO_CONTENT = `I am a passionate and driven Full Stack & React Native developer with a strong focus on crafting scalable and responsive web & mobile applications. With hands-on experience in both front-end and back-end technologies such as React.js, Node.js, Express.js, MySQL, and MongoDB, I strive to build user-centric solutions that deliver excellent performance and user experiences. My goal is to leverage my skills to create innovative web applications that meet business needs and exceed user expectations.`;
 
-export const HERO_CONTENT = `I am a passionate and driven full stack developer with a strong focus on crafting scalable and responsive web applications. With hands-on experience in both front-end and back-end technologies such as React.js, Node.js, Express.js, MySQL, and MongoDB, I strive to build user-centric solutions that deliver excellent performance and user experiences. My goal is to leverage my skills to create innovative web applications that meet business needs and exceed user expectations.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With experience in technologies such as React, Node.js, MySQL, and MongoDB, I thrive in dynamic environments and enjoy solving complex problems. My journey in web development began with a deep curiosity for how things work, which has evolved into a career where I continuously strive to learn and adapt to new challenges. As a quick learner, I am always ready to pick up new skills and technologies to enhance my abilities. Outside of coding, I enjoy exploring new technologies and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile Full Stack & React Native developer with a passion for creating efficient and user-friendly web & mobile applications. With experience in technologies such as React & React Native, Node.js, MySQL, and MongoDB, I thrive in dynamic environments and enjoy solving complex problems. My journey in web development began with a deep curiosity for how things work, which has evolved into a career where I continuously strive to learn and adapt to new challenges. As a quick learner, I am always ready to pick up new skills and technologies to enhance my abilities. Outside of coding, I enjoy exploring new technologies and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
   {
@@ -29,7 +28,7 @@ export const PROJECTS = [
     description:
       "Developed the Parth Clinic website during my time at Solvify Tech. Worked extensively on the user interface and frontend of the admin panel, ensuring a responsive and intuitive design. Additionally, developed APIs for the admin panel to enable efficient data management and seamless communication between frontend and backend systems.",
     technologies: ["React", "Bootstrap", "Node.js", "MySQL", "TypeScript"],
-    link:"https://parthclinic.com/"
+    link: "https://parthclinic.com/",
   },
   {
     title: "Adinath trust",
@@ -37,7 +36,7 @@ export const PROJECTS = [
     description:
       "Developed a website for Aadinnath Trust, showcasing services, donation options, and available facilities in Surat. The site features a user-friendly interface and responsive design.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    link:"https://adinath-landing-page.vercel.app/"
+    link: "https://adinath-landing-page.vercel.app/",
   },
   {
     title: "Echo Tales",
@@ -45,9 +44,15 @@ export const PROJECTS = [
     description:
       "Developed a website for Aadinnath Trust, showcasing services, donation options, and available facilities in Surat. The site features a user-friendly interface and responsive design.",
     technologies: ["React", "CSS", "Tailwind"],
-    link:"https://echo-tales.vercel.app/"
+    link: "https://echo-tales.vercel.app/",
   },
+];
 
+export const CURRENT_STATUS = [
+   {
+    title: "React Native Development",
+    description: "Building a cross-platform React Native app for both Android and iOS at JVENTURELY PRIVATE LIMITED as Freelancer",
+  },
 ];
 
 export const CONTACT = {
