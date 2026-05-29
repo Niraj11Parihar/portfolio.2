@@ -1,6 +1,11 @@
 import project1 from "../assets/projects/Project1.png";
 import project2 from "../assets/projects/Project2.png";
 import project3 from "../assets/projects/Project3.png";
+import epochLag1 from "../assets/projects/EpochLag/1.jpg";
+import epochLag2 from "../assets/projects/EpochLag/2.jpg";
+import epochLag3 from "../assets/projects/EpochLag/3.jpg";
+import epochLag4 from "../assets/projects/EpochLag/4.jpg";
+import epochLag5 from "../assets/projects/EpochLag/5.jpg";
 
 export const HERO_CONTENT = `I am a passionate and driven Full Stack & React Native developer with a strong focus on crafting scalable and responsive web & mobile applications. With hands-on experience in both front-end and back-end technologies such as React.js, Node.js, Express.js, MySQL, and MongoDB, I strive to build user-centric solutions that deliver excellent performance and user experiences. My goal is to leverage my skills to create innovative web applications that meet business needs and exceed user expectations.`;
 
@@ -8,10 +13,11 @@ export const ABOUT_TEXT = `I am a dedicated and versatile Full Stack & React Nat
 
 export const EXPERIENCES = [
   {
-    year: "April 2024 - June 2024",
-    role: "Full Stack Developer",
-    company: "Freelance",
-    description: `Created a website for Aadinnath Trust, showcasing its services, donation options, and available facilities in Surat. Developed the website using HTML, CSS, Bootstrap, and JavaScript, focusing on user-friendly design and functionality. Delivered the project within the agreed timeline, ensuring client satisfaction.`,
+    year: "October 19, 2025 - April 25, 2026",
+    role: "React Native Developer",
+    company: "Epoch Lag – Premium Social Storytelling App",
+    description: `Built high-performance iOS/Android app from Figma designs featuring block-based story editor, gesture-driven UX, and optimized media rendering with multi-stack navigation (Tabs/Drawer/Modals) without back glitches. Achieved 60fps smooth animations & transitions while ensuring consistent cross-platform UX across Android and iOS. Implemented complex state management with Redux, background sync, and fixed critical issues like reload flashes, jumps, and gesture conflicts. Delivered production-ready app supporting long-form stories with text, image, video, and audio content with a scalable architecture for collaborative threads and private albums.`,
+    skills: ["React Native", "Mobile App Development", "Redux", "Expo.io", "TypeScript"],
   },
   {
     year: "January 2025 - March 2025",
@@ -19,9 +25,24 @@ export const EXPERIENCES = [
     company: "Solvify Tech",
     description: `Worked as a Full Stack Developer at Solvify Tech, where I was involved in developing and maintaining web applications using a modern tech stack including React, Bootstrap, Node.js, MySQL, and TypeScript. I contributed to both frontend and backend development—building responsive, user-friendly interfaces and implementing robust server-side logic. Gained hands-on experience across multiple client projects, collaborating closely with cross-functional teams to deliver efficient, scalable, and maintainable solutions.`,
   },
+  {
+    year: "April 2024 - June 2024",
+    role: "Full Stack Developer",
+    company: "Freelance",
+    description: `Created a website for Aadinnath Trust, showcasing its services, donation options, and available facilities in Surat. Developed the website using HTML, CSS, Bootstrap, and JavaScript, focusing on user-friendly design and functionality. Delivered the project within the agreed timeline, ensuring client satisfaction.`,
+  },
 ];
 
 export const PROJECTS = [
+  {
+    title: "Epoch Lag – Premium Social Storytelling App",
+    image: epochLag1,
+    gallery: [epochLag1, epochLag2, epochLag3, epochLag4, epochLag5],
+    description:
+      "Built high-performance iOS/Android app from Figma designs featuring block-based story editor, gesture-driven UX, and optimized media rendering with multi-stack navigation. Achieved 60fps smooth animations & transitions with consistent cross-platform UX. Implemented complex state management with Redux and background sync. Delivered production-ready app supporting long-form stories with text, image, video, and audio content.",
+    technologies: ["React Native", "Mobile Development", "Redux", "Expo.io", "TypeScript"],
+    link: "#",
+  },
   {
     title: "Parth Clinic",
     image: project3,
@@ -48,12 +69,7 @@ export const PROJECTS = [
   },
 ];
 
-export const CURRENT_STATUS = [
-   {
-    title: "React Native Development",
-    description: "Building a cross-platform React Native app for both Android and iOS at JVENTURELY PRIVATE LIMITED as Freelancer",
-  },
-];
+
 
 export const CONTACT = {
   address: null,
