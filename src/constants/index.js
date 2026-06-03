@@ -9,7 +9,14 @@ import epochLag5 from "../assets/projects/EpochLag/5.jpg";
 
 export const HERO_CONTENT = `I am a passionate and driven Full Stack & React Native developer with a strong focus on crafting scalable and responsive web & mobile applications. With hands-on experience in both front-end and back-end technologies such as React.js, Node.js, Express.js, MySQL, and MongoDB, I strive to build user-centric solutions that deliver excellent performance and user experiences. My goal is to leverage my skills to create innovative web applications that meet business needs and exceed user expectations.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile Full Stack & React Native developer with a passion for creating efficient and user-friendly web & mobile applications. With experience in technologies such as React & React Native, Node.js, MySQL, and MongoDB, I thrive in dynamic environments and enjoy solving complex problems. My journey in web development began with a deep curiosity for how things work, which has evolved into a career where I continuously strive to learn and adapt to new challenges. As a quick learner, I am always ready to pick up new skills and technologies to enhance my abilities. Outside of coding, I enjoy exploring new technologies and contributing to open-source projects.`;
+export const ABOUT_TEXT = [
+  "Dedicated and versatile Full Stack & React Native developer with a passion for creating efficient and user-friendly web & mobile applications",
+  "Experienced in React & React Native, Node.js, MySQL, and MongoDB with a strong foundation across the tech stack",
+  "Thrive in dynamic environments and enjoy solving complex problems with innovative solutions",
+  "Started with curiosity about how things work, which evolved into a commitment to continuous learning and adaptation",
+  "Quick learner ready to pick up new skills and technologies to enhance my abilities",
+  "Passionate about exploring new technologies and contributing to open-source projects"
+];
 
 export const EXPERIENCES = [
   {
